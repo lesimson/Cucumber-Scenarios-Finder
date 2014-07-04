@@ -1,4 +1,0 @@
-{
-    "cucumber_features_path"  :  "features",
-    "cucumber_scenario_pattern"   :  ".*\\.feature"
-}
