@@ -49,7 +49,16 @@ class CucumberBaseCommand(sublime_plugin.WindowCommand, object):
       file_path = self.scenarios[index][2]
       view = self.window.open_file(file_path)
       self.active_ref = (view, self.scenarios[index][1])
-      self.mark_step()
+      self.mark_scenario()
+
+  def mark_scenario(self):
+
+    view = self.window.active_view()
+
+    if view.is_loading():
+      sublime.set_timeout(self.mark_scenario, 50)
+    else:
+      view.run_command("goto_line", {"line": self.active_ref[1]+1} )
 
 class CucumberScenarioFinderCommand(CucumberBaseCommand):
   def __init__(self, window):
