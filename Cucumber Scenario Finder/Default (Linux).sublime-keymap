@@ -1,0 +1,5 @@
+[
+  { "keys": ["ctrl+alt+y"], "command": "cucumber_step_finder" },
+  { "keys": ["ctrl+alt+u"], "command": "cucumber_step_finder_local" },
+  { "keys": ["ctrl+shift+m"], "command": "match_step" }
+]
