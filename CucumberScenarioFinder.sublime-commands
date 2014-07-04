@@ -1,0 +1,4 @@
+[
+	{ "Command": "cucumber_scenario_finder_local", "caption": "Cucumber: Search scenario in current file"},
+	{ "command": "cucumber_scenario_finder", "caption": "Cucumber: Search steps" }
+]
